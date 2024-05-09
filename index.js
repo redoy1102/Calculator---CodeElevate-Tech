@@ -2,6 +2,10 @@ let equalEventCounter = 0;
 
 function setOperator(operator)
 {
+    if (equalEventCounter != 0)
+    {
+            equalEventCounter = 0;    
+    }
     let string = document.querySelector('input[name="display"]').value;
     let lastCharacter = string[(string.length) - 1];
     
