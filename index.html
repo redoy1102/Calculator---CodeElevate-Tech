@@ -14,33 +14,33 @@
                     <input type="text" name="display">
                 </div>
                 <div class="buttons">
-                    <input class="ac-del" type="button" value="AC" onclick="display.value = ''">
+                    <input class="ac-del" type="button" value="AC" onclick="AC()">
                     <input class="ac-del" type="button" value="Del" onclick="display.value = display.value.toString().slice(0,-1)">
                     <input class="operators" type="button" value="." onclick="setOperator('.')">
                     <input class="operators" type="button" value="/" onclick="setOperator('/')">
                 </div>
                 <div class="buttons">
-                    <input type="button" value="7" onclick="display.value += '7'">
-                    <input type="button" value="8" onclick="display.value += '8'">
-                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="7" onclick="numberPad(7)">
+                    <input type="button" value="8" onclick="numberPad(8)">
+                    <input type="button" value="9" onclick="numberPad(9)">
                     <input class="operators" type="button" value="*" onclick="setOperator('*')">
                 </div>
                 <div class="buttons">
-                    <input type="button" value="4" onclick="display.value += '4'">
-                    <input type="button" value="5" onclick="display.value += '5'">
-                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="4" onclick="numberPad(4)">
+                    <input type="button" value="5" onclick="numberPad(5)">
+                    <input type="button" value="6" onclick="numberPad(6)">
                     <input class="operators" type="button" value="-" onclick="setOperator('-')">
                 </div>
                 <div class="buttons">
-                    <input type="button" value="1" onclick="display.value += '1'">
-                    <input type="button" value="2" onclick="display.value += '2'">
-                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="1" onclick="numberPad(1)">
+                    <input type="button" value="2" onclick="numberPad(2)">
+                    <input type="button" value="3" onclick="numberPad(3)">
                     <input class="operators" type="button" value="+" onclick="setOperator('+')">
                 </div>
                 <div class="buttons">
                     <input class="zero" type="button" value="00" onclick="display.value += '00'">
                     <input class="zero" type="button" value="0" onclick="display.value += '0'">
-                    <input type="button" value="=" class="equal" onclick="display.value = eval(display.value)">
+                    <input type="button" value="=" class="equal" onclick="handleEqual(display.value)">
                 </div>
             </form>
         </div>
